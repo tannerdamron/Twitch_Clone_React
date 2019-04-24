@@ -24,6 +24,7 @@ function TopNav() {
             width: 80px;
             height: 50px;
             float: left;
+            margin-left: -14px;
           }
           .searchbar {
             border-radius: 5px 5px 5px 5px;
@@ -36,6 +37,7 @@ function TopNav() {
             background-size: 20px 17px;
             padding-left: 30px;
             color: white;
+            width: 398px;
           }
           .crown {
             float: left;
@@ -67,7 +69,7 @@ function TopNav() {
         <button className="btn">Browse</button>
         <button className="btn">Try Prime</button>
         <button className="btn ellipses">&hellip;</button>
-        <input className="searchbar" type="text"/>
+        <input className="searchbar" type="text" placeholder="Search"/>
         <div className="rightSideNav">
           <img className="crown" src={crown} />
           <button className="btn login">Log In</button>

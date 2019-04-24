@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import TopNav from './TopNav';
+import Sidenav from './Sidenav'
 
 function App() {
   return(
@@ -11,6 +12,7 @@ function App() {
       </div>
       <div>
         <TopNav/>
+        <Sidenav/>
       </div>
     </div>
   );

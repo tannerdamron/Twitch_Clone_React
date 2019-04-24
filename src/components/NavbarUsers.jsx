@@ -15,7 +15,7 @@ function NavbarUsers(props) {
             font-size: 14px;
           }
           .userInfo {
-            
+            margin-top: 5px;
           }
           .user {
             color: #B8B5C0;
@@ -25,7 +25,8 @@ function NavbarUsers(props) {
           .userImage {
             margin-left: 10px;
             height: 30px;
-            width: 36px;
+            width: 34px;
+            border-radius: 5px;
           }
           .userName {
             margin: -8px 0 -8px 0;

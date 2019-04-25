@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import TopNav from './TopNav';
 import Sidenav from './Sidenav'
 import CurrentlyStreaming from './CurrentlyStreaming';
+import PopularLive from './PopularLive';
 
 function App() {
   return(
@@ -13,16 +14,25 @@ function App() {
           display: grid;
           grid-template-columns: 1fr 6fr;
         }
+        .fixed {
+          position: fixed;
+        }
+        .pageContent {
+          margin-left: 231px
+        }
         `}</style>
       </div>
       <div>
-        <TopNav/>
+        {/* <div className="fixed"> */}
+          <TopNav/>
+        {/* </div> */}
         <div className="bodyContent">
-          <div>
-          <Sidenav />
+          <div className="fixed">
+            <Sidenav/>
           </div>
-          <div>
+          <div className="pageContent">
           <CurrentlyStreaming />
+          <PopularLive/>
           </div>
         </div>
       </div>

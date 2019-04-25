@@ -36,6 +36,9 @@ function CurrentlyStreaming() {
             text-decoration: underline;
             margin-left: 50px;
           }
+          .video {
+            margin-top: 20px;
+          }
         `}</style>
       </div>
         <div className="twitchPrime">
@@ -43,6 +46,14 @@ function CurrentlyStreaming() {
           <img className="crown" src={crown} />
         <p className="primeText"><span className="underline">Twitch Prime</span> Monthly games and in-game loot, exclusives, and access to hundreds of movies & TV shows with Prime Video.<span className="underlineTrial">Start Your Free Trial</span></p>
         </div>
+      <iframe className="video"
+        src="https://player.twitch.tv/?video=v413107188"
+        height="400px"
+        width="1000px"
+        frameborder="<frameborder>"
+        scrolling="<scrolling>"
+        allowfullscreen="<allowfullscreen>">
+      </iframe>
     </div>
   );
 }
